@@ -1,0 +1,31 @@
+{
+    "name": "VisResumeMook",
+    "version": "0.0.1",
+    "author": "赝品",
+    "description": "一款轻巧的桌面应用——简历平台",
+    "main": "./app/main/electron.js",
+    "scripts": {
+        "start:main": "electron ./app/main/electron.js",
+        "install:electron": "ELECTRON_MIRROR=https://cdn.npm.taobao.org/dist/electron/ npm install electron"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.12.1",
+        "electron": "^11.1.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.14.5",
+        "@babel/core": "^7.14.6",
+        "@babel/plugin-transform-modules-commonjs": "^7.14.5",
+        "@babel/plugin-transform-runtime": "^7.14.5",
+        "@babel/preset-env": "^7.14.5",
+        "@babel/preset-react": "^7.14.5",
+        "@babel/preset-typescript": "^7.14.5",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.2"
+    }
+}
