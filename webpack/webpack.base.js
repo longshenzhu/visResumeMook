@@ -6,7 +6,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],      //表示在导入语句中没带文件后缀时，Webpack 会自动带上后缀去尝试访问文件是否存在。
         alias: {
-            '@src': path.join(__dirname, '../', 'app/renderer')   //别名处理
+            '@src': path.join(__dirname, '../', 'app/renderer')   //模块导入别名处理
         }
     },
     module: {

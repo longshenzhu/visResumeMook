@@ -12,7 +12,7 @@ module.exports = {
                 allowTopLevelThis: true,
                 loose: true,
                 lazy: true,
-            }
-        ]
+            },
+        ],
     ]
-}
+};
