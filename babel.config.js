@@ -22,7 +22,7 @@ module.exports = {
                 generateScopedName: '[name]__[local]__[hash:base64:5]',
                 autoResolveMultipleImports: true,
                 filetypes: {
-                '.less': { syntax: 'postcss-less' },
+                    '.less': { syntax: 'postcss-less' },
                 },
             }
         ]
