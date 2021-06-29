@@ -2,6 +2,7 @@ const path = require("path");
 const webpackMerge = require('webpack-merge');
 const baseConfig = require('./webpack.base.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+console.log("__dirname:", __dirname);   // D:\MyWorkSpace\LixiaobingDeKe\workspace\react\visResumeMook\webpack
 
 const devConfig = {
     mode: 'development',
