@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './router';
+
+import store from './store/index';
+import { Provider } from 'react-redux'
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 // import Title from './title/index'
 
 function App(){
     return (
-        <Router />
+        <Provider store={store}>
+            <Router />
+        </Provider>
+        
         // <Router>
         //     <Switch>
         //         <Route path="/">

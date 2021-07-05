@@ -1,5 +1,12 @@
 import path from 'path';
-import { app, BrowserWindow } from 'electron';
+import { app, ipcMain, BrowserWindow } from 'electron';
+
+console.log("app.getAppPath :", app.getAppPath());  //D:\MyWorkSpace\LixiaobingDeKe\workspace\react\visResumeMook\dist
+const ROOT_PATH = path.join(app.getAppPath(), '../');
+ipcMain.on('get-root-path',(event, arg) => {
+    console.log("main get ipc message: get-root-path:", arg);
+    event.reply('reply-root-path', ROOT_PATH);
+})
 
 function isDev() {
     //👉还记得我们配置中通过 webpack.DefinePlugin 定义的构建变量吗
